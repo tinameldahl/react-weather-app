@@ -1,0 +1,17 @@
+.Footer {
+  margin-top: 20px;
+}
+
+.Footer .footer-text {
+  background-color: purple;
+  color: white;
+  padding: 20px;
+}
+
+.Footer a {
+  color: white;
+}
+
+.Footer .footer-cred {
+  font-size: smaller;
+}

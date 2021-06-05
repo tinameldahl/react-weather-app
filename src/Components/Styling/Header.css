@@ -1,0 +1,23 @@
+.Header {
+    background-color: purple;
+    padding: 10px 0px 10px 15px;
+    margin-top: 0px;
+  }
+  
+  .Header .current {
+    font-size: 14px;
+    background-color: white;
+    color: purple;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 1%;
+  }
+  
+
+  
+  .Header button:hover {
+    background-color: purple;
+    color: white;
+  }
+  

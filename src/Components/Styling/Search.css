@@ -1,0 +1,40 @@
+.Search {
+    padding: 20px;
+  }
+  form.search-field input[type="text"] {
+    padding: 10px;
+    font-size: 17px;
+    width: 80%;
+    background: #f1f1f1;
+    margin-bottom: 1%;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid purple;
+  }
+  
+  .Search .submit-button {
+    border-radius: 0px 5px 5px 0px;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 17px;
+    border: 1px solid purple;
+    text-transform: capitalize;
+  }
+  
+  .Search h1 {
+    padding-top: 20px;
+  }
+  
+  .celcius {
+    font-size: 16px;
+  }
+  
+  .fahrenheit {
+    font-size: 16px;
+  }
+  
+  .seperator {
+    font-size: 16px;
+  }
+  

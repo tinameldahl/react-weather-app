@@ -1,0 +1,21 @@
+.Result {
+  padding: 0px 20px 20px 20px;
+  }
+
+.Result .city {
+  font-size: 35px;
+  }
+  
+.Result .weather-description {
+  color: gray;
+  }
+  
+.Result .temperature-head {
+  font-size: 50px;
+  }
+  
+.Result .wind-humidity {
+  font-size: 14px;
+  color: gray;
+  }
+  
