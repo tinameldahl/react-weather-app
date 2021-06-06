@@ -6,7 +6,7 @@ function Search() {
   return (
     <div className="Forecast">
       <div class="weather-forecast" id="forecast">
-        Forecast
+       Forecast function will be added later 
       </div>
     </div>
   );

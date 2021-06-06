@@ -1,5 +1,5 @@
 .Header {
-    background-color: purple;
+    background-color: black;
     padding: 10px 0px 10px 15px;
     margin-top: 0px;
   }
@@ -7,7 +7,7 @@
   .Header .current {
     font-size: 14px;
     background-color: white;
-    color: purple;
+    color: black;
     border: solid 1px white;
     border-radius: 5px;
     padding: 10px;
@@ -17,7 +17,7 @@
 
   
   .Header button:hover {
-    background-color: purple;
+    background-color: black;
     color: white;
   }
   
