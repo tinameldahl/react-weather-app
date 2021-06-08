@@ -1,17 +1,20 @@
+.timestamp-footer {
+  color:white;
+  padding-top:1%;
+}
+
 .Footer {
-  margin-top: 20px;
-}
-
-.Footer .footer-text {
   background-color: black;
-  color: white;
-  padding: 20px;
+  padding: 10px 0px 10px 15px;
+  margin-top: 1%;
 }
 
-.Footer a {
-  color: white;
+hr {
+  color:white;
 }
 
-.Footer .footer-cred {
-  font-size: smaller;
+
+.footer-credit {
+  color: white;
+  font-size: 12px;
 }
