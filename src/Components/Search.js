@@ -32,49 +32,43 @@ function Search(props) {
   }
 
   let form = (
-    <form onSubmit={handleSubmit} className="search-field" id="search-form">
+    <form onSubmit={handleSubmit} >
       <input type="search" placeholder="Enter city" onChange={updateCity} />
       <button type="submit">Search</button>
+      
     </form>
   );
 
 
   if (loaded) {
     return (
-      <container>
-      <div>
+      <div className="Search">
         {form}
+        <hr/>
+        <h2 className="city">{city}</h2>
+        <span className="temperature"> {Math.round(weather.temperature)}°C</span>
 
-        <div className="row ">
-        <div className="col-md">
-          <h2 className="city">You've searched for {city}</h2>
-          <p className="weather-description"> {weather.description} </p>
-        </div>
-        <div className="col-md">
-          <h2 className="temperature-head">
-            <img
-              src={weather.icon}
-              alt={weather.description}
-              id="icon"
-            />
-            <span className="temperature"> {Math.round(weather.temperature)}°C</span>
-
-          </h2>
-          <p className="wind-humidity">
-            Windspeed: <span id="wind">{weather.wind}</span>
-            <span id="description"> km/h</span>
-            <br />
-            Humidity: <span id="humidity">{weather.humidity}</span>
-            <span id="description"> %</span>
-          </p>
-        </div>
+        <img
+          src={weather.icon}
+          alt={weather.description}
+          id="icon"
+        />
+        
+        <p className="weather-description"> {weather.description} </p>
+        <p className="wind-humidity">
+          Windspeed: <span id="wind">{weather.wind} km/h</span>
+        <br />
+          Humidity: <span id="humidity">{weather.humidity} %</span>
+        </p>
       </div>
-
-      </div>
-      </container>
     );
+
   } else {
-    return form;
+    return (
+      <div className="Search">
+        {form}
+      </div>
+    );
   }
 }
 

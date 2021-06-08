@@ -1,41 +1,43 @@
 .Search {
     padding: 20px;
   }
-  form.search-field input[type="text"] {
-    padding: 10px;
-    font-size: 17px;
-    width: 80%;
-    background: #f1f1f1;
-    margin-bottom: 1%;
-    border-radius: 5px 0px 0px 5px;
-    border: 1px solid black;
-  }
-  
-  
-  .Search .submit-button {
-    border-radius: 0px 5px 5px 0px;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    margin-left: 5px;
-    font-size: 17px;
-    border: 1px solid black;
-    text-transform: capitalize;
-  }
-  
-  .Search h1 {
-    padding-top: 20px;
-  }
-  
-  .celcius {
-    font-size: 16px;
-  }
-  
-  .fahrenheit {
-    font-size: 16px;
-  }
-  
-  .seperator {
-    font-size: 16px;
-  }
-  
+
+.temperature  {
+  font-size: 50px;
+}
+
+
+.weather-description {
+  font-weight: 600;
+}
+
+.weather-description:first-letter {
+  text-transform: capitalize;
+}
+
+.city {
+  font-size: 20px;
+}
+
+
+
+form.input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form.input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
