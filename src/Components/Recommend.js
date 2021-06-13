@@ -7,7 +7,7 @@ function Recommend(props) {
     if (props.temp > 30) {
         return (
             <span className="recommend">
-                {" "}and welcome to hell 😈
+                {" "}and its hella hot 😈
             </span>
         )
     }
@@ -26,7 +26,7 @@ function Recommend(props) {
     } else if (props.temp > 10) {
         return (
             <span className="recommend">
-                {" "}and it is jacket weather 🧥
+                {" "}and it is probably jacket weather 🧥
             </span>
         )
     } else if (props.temp > 1) {
@@ -35,11 +35,19 @@ function Recommend(props) {
                 {" "} and you know what, it is quite cold! 🧣
             </span>
         )
-    } else {
 
+    } else if (props.temp >= -10) {
         return (
             <span className="recommend">
-              {" "} and it is rrrreally cold 💀
+                {" "} and it is hella cold 😱
+            </span>
+        )
+    }
+    
+    else {
+        return (
+            <span className="recommend">
+              {" "} and you should stay inside 💀
             </span>
 )}
 }
