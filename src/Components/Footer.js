@@ -1,4 +1,5 @@
 import React from "react";
+import LiveClock from "./LiveClock";
 
 import "./Styling/Footer.css";
 import "./Styling/Header.css"
@@ -10,7 +11,8 @@ function Footer() {
       <div className="Footer">
         <div class="container">
         <p className="timestamp-footer">
-          Current time will be added here
+        Current time: <LiveClock/>
+          
         </p>
         <hr/>
         <p className="footer-credit">
