@@ -10,7 +10,7 @@ function Footer() {
       <div className="Footer">
         <div class="container">
         <p className="timestamp-footer">
-          Time updated: Time will show up here eventually
+          Current time will be added here
         </p>
         <hr/>
         <p className="footer-credit">
