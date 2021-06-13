@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
-
+import WeatherIcon from "./WeatherIcon";
  
 
 import "./Styling/Result.css";
@@ -19,7 +19,7 @@ function Search(props) {
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       cityname: response.data.name,
       date: new Date(response.data.dt * 1000),
@@ -74,11 +74,10 @@ function Search(props) {
             <FormattedDate date={weatherData.date}/>
           </div>
           <div class="col">
-            <img
-              src={weatherData.icon}
-              alt={weatherData.description}
-              id="icon"
-            />
+            
+            <WeatherIcon code={weatherData.icon}  />
+            
+          
             
             
           </div>
