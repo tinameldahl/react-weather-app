@@ -61,10 +61,12 @@ function Search(props) {
         {form}
         <hr/>
         <h2 className="city">The weather in {weatherData.cityname} is currently...</h2>
+        <br/>
         <div className="row">
           <div className="col">
+          <WeatherIcon code={weatherData.icon}  />
           <WeatherTemperature celsius={weatherData.temperature}/>
-          
+          <FormattedDate date={weatherData.date}/>
           <p className="weather-description">{weatherData.description}  </p>
           
           <p className="wind-humidity">
@@ -72,17 +74,11 @@ function Search(props) {
         <br />
               Humidity: <span id="humidity">{weatherData.humidity} %</span>
             </p>
-            <FormattedDate date={weatherData.date}/>
-          </div>
-          <div class="col">
-            
-            <WeatherIcon code={weatherData.icon}  />
-            
-          
-            
             
           </div>
+
         </div>
+
       </div>
       </div>
     );

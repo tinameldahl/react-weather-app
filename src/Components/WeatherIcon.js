@@ -24,12 +24,15 @@ function WeatherIcon(props) {
         "50n": "FOG",
     }
     return (
+        <span>
         <ReactAnimatedWeather
         icon={codeMapping[props.code]}
         color="#1e1e1e"
-        size={64}
+        size={45}
         animate={true}
+        
       />
+      </span>
     );
 }
 

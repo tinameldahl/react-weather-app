@@ -1,0 +1,19 @@
+.unit {
+    color:black;
+    font-weight: 600;
+}
+
+.unit a {
+    color:gray;
+    text-decoration: none;
+    font-weight:400;
+}
+
+.unit a:hover {
+    color:blue;
+}
+
+span.temperature {
+    color:black;
+    padding-left:2%;
+}
