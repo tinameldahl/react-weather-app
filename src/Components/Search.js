@@ -3,6 +3,7 @@ import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import Recommend from "./Recommend";
  
 
 import "./Styling/Result.css";
@@ -66,8 +67,9 @@ function Search(props) {
           <div className="col">
           <WeatherIcon code={weatherData.icon}  />
           <WeatherTemperature celsius={weatherData.temperature}/>
-          <FormattedDate date={weatherData.date}/>
-          <p className="weather-description">{weatherData.description}  </p>
+       
+          <p className="weather-description">{weatherData.description}  
+          <Recommend temp={weatherData.temperature}/></p>
           
           <p className="wind-humidity">
               Windspeed: <span id="wind">{weatherData.wind} km/h</span>
@@ -78,6 +80,13 @@ function Search(props) {
           </div>
 
         </div>
+        <div className="row">
+
+          <hr/>
+          <FormattedDate date={weatherData.date}/>
+
+       
+        </div>  
 
       </div>
       </div>
@@ -88,6 +97,8 @@ function Search(props) {
       <div className="Search">
         <div class="container">
           {form}
+          <br/>
+          Please search for a city
         </div>
       </div>
     );

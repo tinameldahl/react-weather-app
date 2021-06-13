@@ -11,7 +11,7 @@ function Footer() {
       <div className="Footer">
         <div class="container">
         <p className="timestamp-footer">
-        Current time: <LiveClock/>
+        <LiveClock/>
           
         </p>
         <hr/>
