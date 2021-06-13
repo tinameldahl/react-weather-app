@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
  
 
 import "./Styling/Result.css";
@@ -62,8 +63,8 @@ function Search(props) {
         <h2 className="city">The weather in {weatherData.cityname} is currently...</h2>
         <div className="row">
           <div className="col">
+          <WeatherTemperature celsius={weatherData.temperature}/>
           
-          <span className="temperature"> {Math.round(weatherData.temperature)}°C</span>
           <p className="weather-description">{weatherData.description}  </p>
           
           <p className="wind-humidity">
