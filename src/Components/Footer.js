@@ -7,22 +7,22 @@ import "./Styling/Header.css"
 
 function Footer() {
   return (
-  
-      <div className="Footer">
-        <div class="container">
+
+    <div className="Footer">
+      <div className="container">
         <p className="timestamp-footer">
-        <LiveClock/>
-          
+          <LiveClock />
+
         </p>
-        <hr/>
+        <hr />
         <p className="footer-credit">
           My Weather React App 1.0 - a project by Tina Meldahl
-          <br/>
+          <br />
           GitHub - Hosted on
         </p>
       </div>
-      </div>
-    );
+    </div>
+  );
 }
 
 export default Footer;

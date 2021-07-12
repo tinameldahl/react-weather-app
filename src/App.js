@@ -14,7 +14,6 @@ function App() {
       <div className="Container">
         <Header />
         <Search />
-        <Forecast />
         <Footer />
       </div>
     </div>

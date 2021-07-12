@@ -25,14 +25,14 @@ function WeatherIcon(props) {
     }
     return (
         <span>
-        <ReactAnimatedWeather
-        icon={codeMapping[props.code]}
-        color="#1e1e1e"
-        size={45}
-        animate={true}
-        
-      />
-      </span>
+            <ReactAnimatedWeather
+                icon={codeMapping[props.code]}
+                color="#1e1e1e"
+                size={props.size}
+                animate={true}
+
+            />
+        </span>
     );
 }
 
