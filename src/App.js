@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Header from "./Components/Header";
 import Search from "./Components/Search";
 import Footer from "./Components/Footer";
-import Forecast from "./Components/Forecast";
 
 import "./Components/Styling/styles.css";
 

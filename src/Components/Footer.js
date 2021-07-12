@@ -18,7 +18,7 @@ function Footer() {
         <p className="footer-credit">
           My Weather React App 1.0 - a project by Tina Meldahl
           <br />
-          GitHub - Hosted on
+          <a href="https://github.com/tinameldahl/react-weather-app" rel="noFollow">GitHub</a> - Hosted on <a href="https://friendly-bassi-c9d486.netlify.app/" rel="noFollow">Netlify</a>
         </p>
       </div>
     </div>

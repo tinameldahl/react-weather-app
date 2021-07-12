@@ -6,9 +6,7 @@ function Header() {
   return (
     <div className="Header">
       <div className="container">
-        <p>
-          <button className="current">Find my current location (not ready)</button>
-        </p>
+
       </div>
     </div>
   );
